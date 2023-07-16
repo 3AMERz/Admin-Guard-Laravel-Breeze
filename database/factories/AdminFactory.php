@@ -8,7 +8,7 @@ use Illuminate\Support\Facades\Hash;
 use Spatie\Permission\Models\Role;
 use Illuminate\Support\Str;
 
-$roleNames = (new Role)->getAllRoleNames();
+$roleNames = getAllRoleNames();
 $key = array_search('Owner', $roleNames);
 unset($roleNames[$key]);
 
@@ -26,7 +26,7 @@ class AdminFactory extends Factory
         return $this->afterMaking(function (Admin $admin) {
         })->afterCreating(function (Admin $admin) {
             
-            $roleNames = (new Role)->getAllRoleNames();
+            $roleNames = getAllRoleNames();
             $key = array_search('Owner', $roleNames);
             unset($roleNames[$key]);
             

@@ -21,10 +21,10 @@ class RoleSeeder extends Seeder
         // 'add_permission', 'show_permission','edit_permission','delete_permission',
         // 'add_post', 'show_post','edit_post','delete_post']);
 
-        $allPermission = (new Permission)->getAllPermissionNames();
+        $allPermission = getAllPermissionNames();
 
         function getPerNames($indexes){
-            $allPermission = (new Permission)->getAllPermissionNames();
+            $allPermission = getAllPermissionNames();
             $perNames=[];
 
             foreach($indexes as $index){

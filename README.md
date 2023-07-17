@@ -11,6 +11,11 @@
 
 The Project Has Admin and User Guards with Authentication & Authorization By Laravel Breeze.
 
+# Video
+
+https://github.com/3AMERz/Admin-Guard-Laravel-Breeze/assets/74880250/0f24c3b0-7a09-48c1-8b04-f63940b2a336
+
+
 ## Features
 
 - Two Guards: Admin and User.
